@@ -173,8 +173,6 @@ section .container {
   height: 600px;
   left: 600px;
   top: 0px;
-  -webkit-transition-duration: 0.5s all ease;
-          transition-duration: 0.5s all ease;
 }
 .modal-place .modal-holder .modal-container .arrayHolder .left-arrow .left {
   cursor: pointer;
@@ -217,15 +215,11 @@ section .container {
 .moveLeft {
   -webkit-transform: translateX(-600px);
           transform: translateX(-600px);
-  -webkit-transition-duration: 0.5s all ease;
-          transition-duration: 0.5s all ease;
 }
 
 .shiftLeft {
   -webkit-transform: translateX(-600px);
           transform: translateX(-600px);
-  -webkit-transition-duration: 0.5s all ease;
-          transition-duration: 0.5s all ease;
   right: -20px;
 }
 
