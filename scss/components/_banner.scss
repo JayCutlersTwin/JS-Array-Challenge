@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.banner-section {
+    margin-top: -78px;
+    .container {
+        .banner {
+            .random-banner-image {
+                display: block;
+                background-image: url("https://picsum.photos/1280/1080?blur");
+                background-repeat: no-repeat;
+                height: 100vh;
+                background-size: cover;
+            }
+        }
+    }
+}

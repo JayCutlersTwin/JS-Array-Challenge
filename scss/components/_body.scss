@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+html {
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+body {
+    margin: 0px;
+}
+
+section {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

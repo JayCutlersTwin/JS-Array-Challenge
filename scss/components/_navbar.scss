@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+nav {
+    padding: 20px 0px;
+    width: 100%;
+    background-color: $Primary-Color;
+    position: relative;
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        li {
+            text-decoration: none;
+            color: $Secondary-Color;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: (2px 2px 8px $Black);
+        }
+    }
+}
+
+
+@media (min-width:576px) {
+    nav {
+        ul {
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+
+            }
+        }
+    }
+}

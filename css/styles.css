@@ -1,0 +1,278 @@
+html {
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+section .container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.modal-place {
+  position: fixed;
+  top: calc(50% - (600px /2));
+  left: calc(50% - (600px /2));
+}
+.modal-place .modal-holder .modal-container {
+  display: block;
+  height: 600px;
+  width: 600px;
+  overflow-y: auto;
+  background-color: #89cff0;
+  border-radius: 12px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modal-place .modal-holder .modal-container .clickme {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: calc(50% - (95px /2));
+  left: calc(50% - (212px /2));
+  overflow-y: auto;
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #F0AA89;
+  padding: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+}
+.modal-place .modal-holder .modal-container .clickme:hover {
+  background-color: #dd5a1c;
+  color: black;
+}
+.modal-place .modal-holder .modal-container .right {
+  display: none;
+  cursor: pointer;
+  right: 0px;
+  top: calc(50% - (20px /2));
+  position: absolute;
+}
+.modal-place .modal-holder .modal-container .email-container {
+  display: none;
+  position: relative;
+  top: calc(50% - (201px /2));
+  text-align: center;
+}
+.modal-place .modal-holder .modal-container .email-container h1 {
+  margin-top: 0px;
+}
+.modal-place .modal-holder .modal-container .email-container .myForm .email-input {
+  font-size: 20px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: 2px solid #F0AA89;
+  width: 400px;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+}
+.modal-place .modal-holder .modal-container .email-container .myForm .email-input:focus {
+  border: 2px solid #F0AA89;
+  outline: none;
+}
+.modal-place .modal-holder .modal-container .email-container .myForm .submitEmail {
+  cursor: pointer;
+  display: block;
+  padding: 20px 30px;
+  font-size: 20px;
+  background-color: #F0AA89;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+  left: calc(50% - (122px /2));
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+}
+.modal-place .modal-holder .modal-container .email-container .myForm .submitEmail:focus {
+  background-color: #dd5a1c;
+  color: black;
+}
+.modal-place .modal-holder .modal-container .image-selection {
+  display: none;
+  margin: 0px 20px;
+  position: absolute;
+  top: 0px;
+  left: calc(50% - (268px /2));
+}
+.modal-place .modal-holder .modal-container .image-selection h1 {
+  text-align: center;
+}
+.modal-place .modal-holder .modal-container .image-selection .profile-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.modal-place .modal-holder .modal-container .image-selection .profile-image-container .profile-image {
+  display: none;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+}
+.modal-place .modal-holder .modal-container .image-selection .profile-image-container .refresh-image {
+  cursor: pointer;
+  display: block;
+  padding: 20px 30px;
+  font-size: 20px;
+  height: 80px;
+  background-color: #F0AA89;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+}
+.modal-place .modal-holder .modal-container .image-selection .profile-image-container .refresh-image:hover {
+  background-color: #dd5a1c;
+  color: black;
+}
+.modal-place .modal-holder .modal-container .image-selection .submitImageBtn {
+  cursor: pointer;
+  display: none;
+  padding: 20px 30px;
+  font-size: 20px;
+  background-color: #F0AA89;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  left: calc(50% - (122px /2));
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+}
+.modal-place .modal-holder .modal-container .image-selection .submitImageBtn:hover {
+  background-color: #dd5a1c;
+  color: black;
+}
+.modal-place .modal-holder .modal-container .arrayHolder {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 600px;
+  top: 0px;
+  -webkit-transition-duration: 0.5s all ease;
+          transition-duration: 0.5s all ease;
+}
+.modal-place .modal-holder .modal-container .arrayHolder .left-arrow .left {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - (20px /2));
+}
+.modal-place .modal-holder .modal-container .arrayHolder h2 {
+  text-align: center;
+  margin: 0px;
+  text-decoration: underline;
+}
+.modal-place .modal-holder .modal-container .arrayHolder .flexed-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal-place .modal-holder .modal-container .arrayHolder .flexed-con h5 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.modal-place .modal-holder .modal-container .arrayHolder .flexed-con img {
+  position: relative;
+  left: calc(50% - (340px /2));
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+}
+
+.moveLeft {
+  -webkit-transform: translateX(-600px);
+          transform: translateX(-600px);
+  -webkit-transition-duration: 0.5s all ease;
+          transition-duration: 0.5s all ease;
+}
+
+.shiftLeft {
+  -webkit-transform: translateX(-600px);
+          transform: translateX(-600px);
+  -webkit-transition-duration: 0.5s all ease;
+          transition-duration: 0.5s all ease;
+  right: -20px;
+}
+
+nav {
+  padding: 20px 0px;
+  width: 100%;
+  background-color: #89cff0;
+  position: relative;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+nav ul li {
+  text-decoration: none;
+  color: #F0AA89;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+@media (min-width: 576px) {
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.banner-section {
+  margin-top: -78px;
+}
+.banner-section .container .banner .random-banner-image {
+  display: block;
+  background-image: url("https://picsum.photos/1280/1080?blur");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}

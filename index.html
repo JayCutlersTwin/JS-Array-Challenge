@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+        <script src="https://unpkg.com/mdn-polyfills/Object.assign"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mdn-polyfills/NodeList.prototype.forEach.js"></script>
+
+
+        <title>JS Array</title>
+    </head>
+    <body>
+
+        <nav id="navbar">
+            <ul>
+                <li class="nav-links">Get an Image</li>
+            </ul>
+        </nav>
+
+        <div class="banner-section">
+            <div class="container">
+                <div class="banner">
+                    <div class="random-banner-image">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-place">
+            <div class="modal-holder">
+                <div class="modal-container">
+
+                        <button class="clickme" type="button" name="button" id="CLICKME">Click Me!</button>
+                        <img src="icons/right.svg" alt="down arrow" class="right" id="RIGHT">
+
+                    <div class="email-container" id="EMAILCONTAINER">
+                        <h1>Type in your email</h1>
+                        <form class="myForm" id="MYFORM" action="index.html" method="post">
+                            <input class="email-input" type="email" name="email" id="EMAILINPUT" placeholder="Email" required>
+                            <button id="SUBMITEMAIL" class="submitEmail"type="button" name="button">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="image-selection" id="IMAGECONTAINER">
+                        <h1>Choose an Image</h1>
+                        <div class="profile-image-container">
+                            <div class="profile-image" id="PROFILEIMAGE">
+                                <img src="" alt="random image" id="RANDOMIMAGE">
+                            </div>
+
+                            <button class="refresh-image"id="REFRESH" type="button" name="button">New Image</button>
+                        </div>
+                        <button class="submitImageBtn" id="SUBMITIMAGE" type="button" name="button">Submit</button>
+                    </div>
+
+                    <div class="arrayHolder" id="ARRAYHOLDER">
+                        <div class="left-arrow">
+                            <img src="icons/left.svg" alt="left arrow" class="left" id="LEFT">
+                        </div>
+                        <h2>Emails and Images</h2>
+                        <div class="flexed-con" id="FLEXED">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <script src="dist/email-dist.js" charset="utf-8"></script>
+    </body>
+</html>
