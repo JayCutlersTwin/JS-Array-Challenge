@@ -30,6 +30,9 @@ section .container {
   overflow-y: auto;
   overflow-x: hidden;
 }
+.modal-place .modal-holder .modal-container::-webkit-scrollbar {
+  display: none;
+}
 .modal-place .modal-holder .modal-container .clickme {
   cursor: pointer;
   display: block;
@@ -55,8 +58,23 @@ section .container {
   display: none;
   cursor: pointer;
   right: 0px;
-  top: calc(50% - (20px /2));
+  width: 60px;
+  top: calc(50% - (60px /2));
   position: absolute;
+}
+.modal-place .modal-holder .modal-container .right:hover + .tooltip-containerRight {
+  display: block;
+}
+.modal-place .modal-holder .modal-container .tooltip-containerRight {
+  display: none;
+  position: absolute;
+  right: 1%;
+  top: 55%;
+}
+.modal-place .modal-holder .modal-container .tooltip-containerRight .tooltip-innerRight p {
+  margin: 0px;
+  font-weight: bold;
+  padding: 10px;
 }
 .modal-place .modal-holder .modal-container .email-container {
   display: none;
@@ -177,7 +195,23 @@ section .container {
 .modal-place .modal-holder .modal-container .arrayHolder .left-arrow .left {
   cursor: pointer;
   position: absolute;
-  top: calc(50% - (20px /2));
+  width: 60px;
+  right: -60px;
+  top: calc(50% - (60px /2));
+}
+.modal-place .modal-holder .modal-container .arrayHolder .left-arrow .left:hover + .tooltip-containerLeft {
+  display: block;
+}
+.modal-place .modal-holder .modal-container .arrayHolder .left-arrow .tooltip-containerLeft {
+  display: none;
+  position: absolute;
+  left: 1%;
+  top: 55%;
+}
+.modal-place .modal-holder .modal-container .arrayHolder .left-arrow .tooltip-containerLeft .tooltip-innerLeft p {
+  margin: 0px;
+  font-weight: bold;
+  padding: 10px;
 }
 .modal-place .modal-holder .modal-container .arrayHolder h2 {
   text-align: center;
